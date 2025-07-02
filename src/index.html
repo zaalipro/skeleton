@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skeleton Auth</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Skeleton Auth</h1>
+    <div id="auth-container">
+      <div id="form-toggle">
+        <button id="show-login" type="button">Login</button>
+        <button id="show-register" type="button">Register</button>
+      </div>
+      <form id="login-form" style="display:none">
+        <h2>Login</h2>
+        <label>Email:<br><input type="email" id="login-email" required></label><br>
+        <label>Password:<br><input type="password" id="login-password" required></label><br>
+        <button type="submit">Login</button>
+        <div id="login-error" class="error"></div>
+      </form>
+      <form id="register-form" style="display:none">
+        <h2>Register</h2>
+        <label>Username:<br><input type="text" id="register-username" required></label><br>
+        <label>Email:<br><input type="email" id="register-email" required></label><br>
+        <label>Password:<br><input type="password" id="register-password" required></label><br>
+        <label>Confirm Password:<br><input type="password" id="register-confirm" required></label><br>
+        <button type="submit">Register</button>
+        <div id="register-error" class="error"></div>
+      </form>
+    </div>
+    <script src="auth.js"></script>
+  </body>
+</html>
