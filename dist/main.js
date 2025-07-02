@@ -952,15 +952,11 @@ const createWindow = () => {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.ts'),
+            preload: path.join(__dirname, 'preload.js'),
         },
     });
     // and load the index.html of the app.
-    if (true) {
-        mainWindow.loadURL('http://localhost:3000');
-    }
-    else // removed by dead control flow
-{}
+    mainWindow.loadFile(path.join(__dirname, 'index.html'));
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
 };
