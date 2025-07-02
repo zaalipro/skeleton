@@ -20,24 +20,7 @@
         </a>
       </div>
       <div class="flex-none gap-2">
-        <div class="form-control">
-          <select id="theme-picker" class="select select-bordered select-sm">
-            <option value="emerald">Emerald</option>
-            <option value="dracula">Dracula</option>
-            <option value="cupcake">Cupcake</option>
-            <option value="synthwave">Synthwave</option>
-            <option value="valentine">Valentine</option>
-            <option value="aqua">Aqua</option>
-            <option value="luxury">Luxury</option>
-            <option value="garden">Garden</option>
-            <option value="autumn">Autumn</option>
-            <option value="business">Business</option>
-            <option value="acid">Acid</option>
-            <option value="lemonade">Lemonade</option>
-            <option value="night">Night</option>
-            <option value="winter">Winter</option>
-          </select>
-        </div>
+        <!-- Theme picker removed for minimal UI -->
       </div>
     </nav>
     <!-- Hero Section -->
@@ -103,12 +86,5 @@
       </aside>
     </footer>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
-    <script>
-      // Theme picker
-      const themePicker = document.getElementById('theme-picker');
-      themePicker?.addEventListener('change', function() {
-        document.documentElement.setAttribute('data-theme', this.value);
-      });
-    </script>
   </body>
 </html>
